@@ -7,6 +7,6 @@ class ReflectionsController < ApplicationController
 
   private
     def reflection_params
-      params.require(:note).permit(:note)
+      params.require(:reflection).permit(:note)
     end
 end
