@@ -2,8 +2,10 @@
 
 one:
   title: MyString
+  target: 1
   image: MyString
 
 two:
   title: MyString
+  target: 1
   image: MyString

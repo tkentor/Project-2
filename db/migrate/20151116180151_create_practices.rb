@@ -2,7 +2,8 @@ class CreatePractices < ActiveRecord::Migration
   def change
     create_table :practices do |t|
       t.string :title
-      t.string :target
+      t.integer :target
+      t.string :image
 
       t.timestamps null: false
     end
