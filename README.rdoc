@@ -1,0 +1,31 @@
+Project will be a goal tracking app that allows you to input various goals. Users will be able to acknowledge somehow every time they work on a particular goal. If the user clicks on the goal, it will take them to a place for comments where they can write what exactly they did.
+
+-------------
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
