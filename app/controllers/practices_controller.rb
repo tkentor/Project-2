@@ -1,7 +1,7 @@
 class PracticesController < ApplicationController
 
   def index
-      @practice = Practice.all
+      @practices = Practice.all
   end
 
   def new
@@ -21,7 +21,7 @@ class PracticesController < ApplicationController
   end
 
   def create
-    @practice = Practice.new(params.require(:practice).permit(:title, :target))
+    @practice = Practice.new(params.require(:practice).permit(:title, :target, :image))
 
     @practice.save
     redirect_to practices_path
@@ -32,8 +32,8 @@ class PracticesController < ApplicationController
   end
 
   private
-    def article_params
-      params.require(:article).permit(:title, :text)
+    def practice
+      params.require(:practice).permit(:title, :target, :image)
     end
 
 end

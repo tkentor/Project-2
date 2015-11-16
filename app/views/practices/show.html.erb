@@ -1,0 +1,23 @@
+<h2><%= @practice.title %> <a href="/practices/edit">(edit)</a></h2>
+
+<h2>Edit Practice</h2>
+
+<form action="/practices/<%= @practice.id %>" method="post">
+ <input type="hidden" name="_method" value="put">
+
+ <label for="practice[title]">Title:</label>
+ <input name="practice[title]" value="<%= @practice.title %>">
+
+ <label for="practice[target]">Target:</label>
+ <input name="practice[target]" value="<%= @practice.title %>">
+
+ <label for="practice[image]">Image URL:</label>
+ <input name="practice[image]" value="<%= @practice.image %>">
+
+ <input type="submit" value="Create">
+</form>
+
+<form action="/practices/<%= @practice.id %>" method="post">
+ <input type="hidden" name="_method" value="delete">
+ <input class="button-delete" type="submit" value="Delete!">
+</form>
