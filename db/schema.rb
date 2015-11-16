@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151116180219) do
+ActiveRecord::Schema.define(version: 20151116202055) do
 
   create_table "practices", force: :cascade do |t|
     t.string   "title"
@@ -22,10 +22,13 @@ ActiveRecord::Schema.define(version: 20151116180219) do
   end
 
   create_table "reflections", force: :cascade do |t|
-    t.string   "note"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "note"
+    t.integer  "practice_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
+
+  add_index "reflections", ["practice_id"], name: "index_reflections_on_practice_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

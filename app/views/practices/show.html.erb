@@ -21,3 +21,23 @@
  <input type="hidden" name="_method" value="delete">
  <input class="button-delete" type="submit" value="Delete!">
 </form>
+
+<h2>Reflections:</h2>
+<% @practice.reflections.each do |reflection| %>
+
+  <p>
+    <strong>Reflection:</strong>
+    <%= reflection.note %>
+  </p>
+<% end %>
+
+<h2>Add a reflection:</h2>
+<%= form_for([@practice, @practice.reflections.build]) do |f| %>
+  <p>
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

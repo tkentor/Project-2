@@ -9,9 +9,13 @@ class PracticesController < ApplicationController
   end
 
   def update
-   @practice = Practice.find(params[:id])
-   @practice.update(practice_params)
-   redirect_to practices_path
+    @practice = Practice.find(params[:id])
+
+    if @practice.update(practice_params)
+      redirect_to practices_path
+    else
+      render 'edit'
+    end
   end
 
    def destroy
