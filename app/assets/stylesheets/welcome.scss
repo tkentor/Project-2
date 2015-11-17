@@ -3,28 +3,38 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-html{
-  background: url("https://farm3.staticflickr.com/2362/2240547763_977884d2a8_b.jpg")  no-repeat center center fixed;
+body{
+  background: url("http://cdn.lightgalleries.net/4bd5ec0f44d0a/images/burma-2012-105-1.jpg")  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: avenir;
-  color: white;
-  font-size: 50px;
   text-align: center;
+
+}
+
+h1 {
+
+  color: black;
+  font-size: 50px;
+  background: rgba(178,34,34,.7);
+  padding: 5px;
+
 }
 
 .bubbles {
-  // margin: 10px 10px 0 10px;
   position: relative;
   float: left;
   padding: 20px;
   text-align: center;
+  background-size: contain;
+  color: white;
+
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 10px;
   color: white;
   position: absolute;
   text-transform: lowercase;
@@ -39,10 +49,27 @@ h2 span {
    padding:0 7px;
 }
 
-.user-info{
+h3 {
   font-size: 20px;
+  padding: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.new-practice{
+  background-color: black;
+  padding: 15px;
+}
+
+.user-info{
+  font-size: 10px;
 }
 
 a {
   color: white;
+}
+
+.reflections{
+  color: blanchedalmond;
+  background: rgba(205, 133, 63, .7);
 }
