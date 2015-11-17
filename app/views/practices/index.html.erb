@@ -1,10 +1,10 @@
-<h3>Practices<a href="/practices/new">(+)</a></h3>
+<h3><a href="/practices/new">add practice</a></h3>
   <% @practices.each do |practice| %>
-    <div class="bubbles">
+    <div class="bubbles">–
       <%= image_tag "#{practice.image}" %>
-      <h2><span><%= "#{practice.title}" %></span></h2>
+      <h2><span><%= link_to "#{practice.title}", practice_path(practice) %></span></h2>+
     </div>
-     <!-- <%= link_to "edit", practice_path(practice) %> -->
+
  <% end %>
 
 </ul>

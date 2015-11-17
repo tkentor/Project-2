@@ -16,7 +16,7 @@ html{
 }
 
 .bubbles {
-  margin: 10px 10px 0 10px;
+  // margin: 10px 10px 0 10px;
   position: relative;
   float: left;
   padding: 20px;
@@ -26,7 +26,6 @@ html{
 h2 {
   font-size: 30px;
   color: white;
-  margin: 0;
   position: absolute;
   text-transform: lowercase;
   top: 50%;
@@ -38,4 +37,12 @@ h2 {
 
 h2 span {
    padding:0 7px;
+}
+
+.user-info{
+  font-size: 20px;
+}
+
+a {
+  color: white;
 }
