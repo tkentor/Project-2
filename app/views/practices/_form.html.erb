@@ -8,7 +8,7 @@
  <%= value="target" %>
  <%= f.text_field :target %><br>
  <%= value="image" %>
- <%= f.text_field :image %><br><br>
+ <%= f.select :image, [['books', 'http://i.imgur.com/zpFCaZb.gif'],['mindfulness','http://i.imgur.com/PLAS8Jv.gif?3'],['boxing', 'http://i.imgur.com/xzjft73.gif?3']] %><br><br>
  <%= f.submit value="add practice" %>
 <% end %>
 
