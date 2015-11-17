@@ -24,9 +24,11 @@ h1 {
 
 .bubbles {
   position: relative;
+  text-align: center;
+  display: inline;
   float: left;
   padding: 20px;
-  text-align: center;
+  margin: 0 auto;
   background-size: contain;
   color: white;
 }

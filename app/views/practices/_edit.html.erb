@@ -1,0 +1,23 @@
+<br>
+<h3><span class="top-button"><a href="/">&#60 h o m e </a></span></h3>
+
+<div class="form">
+
+<%= form_for @practice do |f| %>
+ <%= value="title" %>
+ <%= f.text_field :title %><br>
+ <%= value="target" %>
+ <%= f.text_field :target %><br>
+ <%= value="image" %>
+ <%= f.select :image, [['books', 'http://i.imgur.com/zpFCaZb.gif'],['mindfulness','http://i.imgur.com/PLAS8Jv.gif?3'],['boxing', 'http://i.imgur.com/xzjft73.gif?3']] %><br><br>
+ <%= f.submit value="update practice" %>
+<% end %>
+
+</div>
+
+
+
+<form action="/practices/<%= @practice.id %>" method="post">
+ <input type="hidden" name="_method" value="delete">
+ <input class="button-delete" type="submit" value="delete practice">
+</form>
