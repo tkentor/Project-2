@@ -1,5 +1,5 @@
-<%= render partial: "edit" %>
 
+<h3><span class="top-button"><a href="/">&#60 h o m e </a></span></h3>
 
 <h3>reflections:</h3>
 <% @practice.reflections.each do |reflection| %>
@@ -17,3 +17,11 @@
     <%= f.submit value="add reflection" %>
   </p>
 <% end %>
+
+<%= render partial: "edit" %>
+
+
+<form action="/practices/<%= @practice.id %>" method="post">
+ <input type="hidden" name="_method" value="delete">
+ <input class="button-delete" type="submit" value="delete practice">
+</form>
