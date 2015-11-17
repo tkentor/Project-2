@@ -27,7 +27,7 @@ class PracticesController < ApplicationController
     @practice = Practice.find(params[:id])
 
     if @practice.update(params.require(:practice).permit(:title, :target, :image))
-      redirect_to @practice
+      redirect_to practices_path
     else
       render 'edit'
     end
