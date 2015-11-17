@@ -5,6 +5,8 @@ class ReflectionsController < ApplicationController
     redirect_to practice_path(@practice)
   end
 
+
+
   private
     def reflection_params
       params.require(:reflection).permit(:note)

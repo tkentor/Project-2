@@ -5,21 +5,21 @@
 <form action="/practices/<%= @practice.id %>" method="post">
  <input type="hidden" name="_method" value="put">
 
- <label for="practice[title]">title:</label>
- <input name="practice[title]" value="<%= @practice.title %>">
+ <label for="practice[title]">title</label>
+ <input name="practice[title]" value="<%= @practice.title %>"><br>
 
- <label for="practice[target]">target:</label>
- <input name="practice[target]" value="<%= @practice.target %>">
+ <label for="practice[target]">target</label>
+ <input name="practice[target]" value="<%= @practice.target %>"><br>
 
- <label for="practice[image]">image URL:</label>
- <input name="practice[image]" value="<%= @practice.image %>">
+ <label for="practice[image]">image</label>
+ <input name="practice[image]" value="<%= @practice.image %>"><br><br>
 
- <input type="submit" value="save" >
+ <input type="submit" value="update" >
 </form>
 
 <form action="/practices/<%= @practice.id %>" method="post">
  <input type="hidden" name="_method" value="delete">
- <input class="button-delete" type="submit" value="delete">
+ <input class="button-delete" type="submit" value="delete practice">
 </form>
 
 
@@ -36,6 +36,6 @@
     <%= f.text_area :note %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit value="add reflection" %>
   </p>
-<% end %> -->
+<% end %>

@@ -3,13 +3,13 @@
 <div class="form">
 
 <%= form_for @practice do |f| %>
- <%= f.label :title %>
- <%= f.text_field :title %>
- <%= f.label :target %>
- <%= f.text_field :target %>
- <%= f.label :image %>
- <%= f.text_field :image %>
- <%= f.submit %>
+ <%= value="title" %>
+ <%= f.text_field :title %><br>
+ <%= value="target" %>
+ <%= f.text_field :target %><br>
+ <%= value="image" %>
+ <%= f.text_field :image %><br><br>
+ <%= f.submit value="add practice" %>
 <% end %>
 
 </div>
