@@ -33,7 +33,7 @@ $('.plus').click(function() {
       img.css('margin', '0px')
     }
   })
-});
+
 
 $('.minus').click(function() {
   img = $(this).siblings().eq(0)
@@ -51,3 +51,5 @@ $('.minus').click(function() {
       img.css('margin', '100px')
     }
   })
+
+});
