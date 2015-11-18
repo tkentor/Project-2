@@ -1,23 +1,22 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-<h3><span class="top-button"><a href="/practices/new">add practice&#8314</a></span></h3>
-    <div class="bubbles">
-      <button type="button" id="minus">–</button>
-      <img src="http://i.imgur.com/PLAS8Jv.gif" id="mindfulness-img">
-      <%= javascript_tag do %>
-      <% end %>
-
-      <h2><span><a href='/mindfulness'>mindfulness</a>
-
-  </span></h2>
-    <button type="button" id="plus">+</button>
+<h3>
+  <span class="top-button"><a href="/practices/new">add practice&#8314</a></span>
+</h3>
+  <div class="bubbles">
+    <button type="button" id="minus">–</button>
+    <img src="http://i.imgur.com/PLAS8Jv.gif">
+    <h2>
+      <span><a href='/mindfulness'>mindfulness</a></span>
+    </h2>
+    <button type="button" class="plus">+</button>
   </div>
       <% @practices.each do |practice| %>
     <div class="bubbles">
       <button type="button" id="minus-ind">–</button>
       <%= image_tag "#{practice.image}" %>
       <h2><span><%= link_to "#{practice.title}", practice_path(practice) %></span></h2>
-    <button type="button" id="plus-ind">+</button>
+    <button type="button" class="plus">+</button>
     </div>
 
  <% end %>

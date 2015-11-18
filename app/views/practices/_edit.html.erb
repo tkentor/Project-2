@@ -5,11 +5,11 @@
 
 <%= form_for @practice do |f| %>
 <%= value="image" %>
-<%= f.select :image, [['books', 'http://i.imgur.com/zGQRlCA.gif'],['mindfulness','http://i.imgur.com/PLAS8Jv.gif?3'],['boxing', 'http://i.imgur.com/xzjft73.gif?3']] %> 
+<%= f.select :image, [['books', 'http://i.imgur.com/zGQRlCA.gif'],['mindfulness','http://i.imgur.com/PLAS8Jv.gif?3'],['boxing', 'http://i.imgur.com/xzjft73.gif?3']] %>
  <%= value="title" %>
  <%= f.text_field :title %>
  <%= value="target" %>
- <%= f.text_field :target %>
+ <%= f.select :target, [['1'],['2'],['3'],['4'],['5']] %>
  <%= f.submit value="update practice" %>
 <% end %>
 
