@@ -28,20 +28,37 @@ $(document).ready(function(){
 // });
 
 
-$('#mindfulness-img').click(function() {
-    if($(this).css('width') == '100px') {
-        $(this).css({
+$('#plus').click(function() {
+    if($('#mindfulness-img').css('width') == '100px') {
+        $('#mindfulness-img').css({
           'width': '150px'});
-    } else if($(this).css(
+    } else if($('#mindfulness-img').css(
       'width') == '150px') {
-        $(this).css({
+        $('#mindfulness-img').css({
             'width': '200px'});
-    } else if($(this).css(
+    } else if($('#mindfulness-img').css(
       'width') == '200px') {
-        $(this).css({
+        $('#mindfulness-img').css({
             'width': '250px'});
     } else {
-        $(this).css({'width':'300px'});
+        $('#mindfulness-img').css({'width':'300px'});
+    }
+});
+
+$('#minus').click(function() {
+    if($('#mindfulness-img').css('width') == '300px') {
+        $('#mindfulness-img').css({
+          'width': '250px'});
+    } else if($('#mindfulness-img').css(
+      'width') == '250px') {
+        $('#mindfulness-img').css({
+            'width': '200px'});
+    } else if($('#mindfulness-img').css(
+      'width') == '200px') {
+        $('#mindfulness-img').css({
+            'width': '150px'});
+    } else {
+        $('#mindfulness-img').css({'width':'100px'});
     }
 });
 
