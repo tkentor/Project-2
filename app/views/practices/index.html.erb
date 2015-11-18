@@ -1,9 +1,17 @@
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 <h3><span class="top-button"><a href="/practices/new">add practice&#8314</a></span></h3>
     <div class="bubbles">
       –
-      <img src="http://i.imgur.com/PLAS8Jv.gif">
-      <h2><span>mindfulness</span></h2>
-      +
+      <img src="http://i.imgur.com/PLAS8Jv.gif" id="mindfulness-img">
+        <%= javascript_tag do %>
+        <% end %>
+      <h2><span><a href='/mindfulness'>mindfulness</a>
+
+
+
+  </span></h2>
+        +
     </div>
       <% @practices.each do |practice| %>
     <div class="bubbles">

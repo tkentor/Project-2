@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
 
   root to: 'practices#index'
+
+  get '/about', to: 'welcome#about'
+    get '/mindfulness', to: 'welcome#mindfulness'
 
   resources :practices do
     resources :reflections

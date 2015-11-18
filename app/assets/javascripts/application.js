@@ -14,3 +14,37 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+//
+//     $('#mindfulness-img').click(function() {
+//     $('#mindfulness-img').css({
+//         'width': '350px'
+//     });
+// });
+//
+//
+// });
+
+
+$('#mindfulness-img').click(function() {
+    if($(this).css('width') == '100px') {
+        $(this).css({
+          'width': '150px'});
+    } else if($(this).css(
+      'width') == '150px') {
+        $(this).css({
+            'width': '200px'});
+    } else if($(this).css(
+      'width') == '200px') {
+        $(this).css({
+            'width': '250px'});
+    } else {
+        $(this).css({'width':'300px'});
+    }
+});
+
+
+
+});
