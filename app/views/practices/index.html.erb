@@ -13,7 +13,7 @@
   </div>
       <% @practices.each do |practice| %>
     <div class="bubbles">
-      <button type="button" id="minus-ind">–</button>
+      <button type="button" id="minus">–</button>
       <%= image_tag "#{practice.image}" %>
       <h2><span><%= link_to "#{practice.title}", practice_path(practice) %></span></h2>
     <button type="button" class="plus">+</button>

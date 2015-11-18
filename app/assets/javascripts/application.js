@@ -16,121 +16,38 @@
 
 $(document).ready(function(){
 
-//
-//     $('#mindfulness-img').click(function() {
-//     $('#mindfulness-img').css({
-//         'width': '350px'
-//     });
-// });
-//
-//
-// });
-
 
 $('.plus').click(function() {
   img = $(this).siblings().eq(1)
     if(img.css('width') == '100px'){
       img.css('width', '150px')
-      img.css('margin', '75px')
+      img.css('margin', '75px');
+    } else if(img.css('width') == '150px'){
+        img.css('width', '200px')
+        img.css('margin', '50px');
+    } else if(img.css('width') == '200px'){
+      img.css('width', '250px')
+      img.css('margin', '25px');
+    } else{
+      img.css('width', '300px')
+      img.css('margin', '0px')
     }
-
-      // else if(img.css('width') == '150px')
-      //   img.css('width', '200px')
-      //   img.css('margin', '50px')
-      // }
-  //
-  //   else if(img.css('width') == '200px')
-  //     img.css('width', '250px')
-  //     img.css('margin', '25px')
-  //
-  //   else(img.css('width') == '250px')
-  //     img.css('width', '300px')
-  //     img.css('margin', '100px')
-  //
-  // });
-
   })
 });
 
-
-    // if($('#mindfulness-img').css('width') == '100px') {
-    //     $('#mindfulness-img').css('width','150px')
-    //     $('#mindfulness-img').css('margin','75px')
-    //     }
-    // else if($('#mindfulness-img').css('width') == '150px') {
-    //   $('#mindfulness-img').css('width','200px')
-    //   $('#mindfulness-img').css('margin','50px')
-    //   }
-    // else if($('#mindfulness-img').css('width') == '200px') {
-    //   $('#mindfulness-img').css('width','250px')
-    //   $('#mindfulness-img').css('margin','25px')
-    //   }
-    // else {
-    //     $('#mindfulness-img').css('width','300px')
-    //     $('#mindfulness-img').css('margin','0px')
-    // }
-// });
-
-// $('#minus').click(function() {
-// console.log("working")
-//     if($('#mindfulness-img').css('width') == '300px') {
-//         $('#mindfulness-img').css('width','250px')
-//         $('#mindfulness-img').css('margin','25px')
-//         }
-//     else if($('#mindfulness-img').css('width') == '250px') {
-//       $('#mindfulness-img').css('width','200px')
-//       $('#mindfulness-img').css('margin','50px')
-//       }
-//     else if($('#mindfulness-img').css('width') == '200px') {
-//       $('#mindfulness-img').css('width','150px')
-//       $('#mindfulness-img').css('margin','75px')
-//       }
-//     else {
-//         $('#mindfulness-img').css('width','100px')
-//         $('#mindfulness-img').css('margin','100px')
-//     }
-// });
-
-//
-// $('#plus-ind').click(function() {
-// console.log("working")
-//     if($('.bubbles').css('width') == '100px') {
-//         $('.bubbles').css('width','150px')
-//         $('.bubbles').css('margin','75px')
-//         }
-//     else if($('.bubbles').css('width') == '150px') {
-//       $('.bubbles').css('width','200px')
-//       $('.bubbles').css('margin','50px')
-//       }
-//     else if($('.bubbles').css('width') == '200px') {
-//       $('.bubbles').css('width','250px')
-//       $('.bubbles').css('margin','25px')
-//       }
-//     else {
-//         $('.bubbles').css('width','300px')
-//         $('.bubbles').css('margin','0px')
-//     }
-// });
-
-// $('#minus-ind').click(function() {
-// console.log("working")
-//     if($('#mindfulness-img').css('width') == '300px') {
-//         $('#mindfulness-img').css('width','250px')
-//         $('#mindfulness-img').css('margin','25px')
-//         }
-//     else if($('#mindfulness-img').css('width') == '250px') {
-//       $('#mindfulness-img').css('width','200px')
-//       $('#mindfulness-img').css('margin','50px')
-//       }
-//     else if($('#mindfulness-img').css('width') == '200px') {
-//       $('#mindfulness-img').css('width','150px')
-//       $('#mindfulness-img').css('margin','75px')
-//       }
-//     else {
-//         $('#mindfulness-img').css('width','100px')
-//         $('#mindfulness-img').css('margin','100px')
-//     }
-// });
-//
-//
-// });
+$('.minus').click(function() {
+  img = $(this).siblings().eq(0)
+    if(img.css('width') == '300px'){
+      img.css('width', '250px')
+      img.css('margin', '25px');
+    } else if(img.css('width') == '250px'){
+        img.css('width', '200px')
+        img.css('margin', '50px');
+    } else if(img.css('width') == '200px'){
+      img.css('width', '150px')
+      img.css('margin', '75px');
+    } else{
+      img.css('width', '100px')
+      img.css('margin', '100px')
+    }
+  })
