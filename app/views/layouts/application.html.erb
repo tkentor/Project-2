@@ -3,11 +3,11 @@
 <head>
   <title> f u l  </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1><sup><font size="-1"> | &nbsp <a href="/about">a b o u t</a> &nbsp | &nbsp&nbsp&nbsp</sup> </font> f u l <sup><font size="-1">| &nbsp f o r &nbsp m i n d f u l &nbsp a w a r e n e s s &nbsp | &nbsp
+  <h1><sup><font size="-1"> | &nbsp <a href="/about">a b o u t</a> &nbsp | &nbsp&nbsp&nbsp</sup> </font> f u l <sup><font size="-1">| &nbsp t h e &nbsp m i n d f u l &nbsp a p p &nbsp | &nbsp
     <% if current_user %>
     <%= link_to 'l o g o u t', destroy_user_session_path, :method => :delete %>
   <% else %>

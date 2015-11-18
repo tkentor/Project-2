@@ -27,7 +27,6 @@ h1 {
   text-align: center;
   display: inline;
   float: left;
-  padding: 20px;
   margin: 0 auto;
   background-size: contain;
   color: white;
@@ -35,6 +34,12 @@ h1 {
 
 .bubbles img{
   width: 100px;
+  padding: 100px;
+}
+
+#mindfulness-img{
+  width: 100px;
+  margin: 100px;
 }
 
 h2 {
@@ -76,6 +81,14 @@ a {
 .reflections{
   color: blanchedalmond;
   background: rgba(205, 133, 63, .5);
+}
+
+button{
+color: blanchedalmond;
+font-weight: bold;
+background: rgba(255, 250, 250, .4);
+border-radius: 10px;
+border: 1px solid rgb(178,34,34);
 }
 
 .button-delete{
