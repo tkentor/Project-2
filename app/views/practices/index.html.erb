@@ -1,15 +1,15 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<div class="home-text">Add a new practice below, or click on an existing practice to update it. Use the + to make note after every time you practice.</div><br>
+<div class="home-text">Add a new practice below, or click on an existing practice to update it. Use the + to make note after every time you practice. Complete a practice five times to master it.</div><br>
 <h3>
   <span class="top-button"><a href="/practices/new">add practice&#8314</a></span>
 </h3><br>
 
   <div class="bubbles">
-    <img src="http://i.imgur.com/QKHTdmS.gif">
+    <img src="http://i.imgur.com/QKHTdmS.gif" id="timer">
     <h2>
       <span><a href='/mindfulness'>meditation timer</a></span>
     </h2>
-    <button type="button" class="plus">+</button>
+    <button type="button" id="plus-timer">+</button>
     <button type="button" class="minus">–</button>
   </div>
       <% @practices.each do |practice| %>

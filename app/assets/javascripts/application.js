@@ -28,9 +28,12 @@ $('.plus').click(function() {
     } else if(img.css('width') == '200px'){
       img.css('width', '250px')
       img.css('margin', '25px');
-    } else{
+    } else if(img.css('width') == '250px'){
       img.css('width', '300px')
-      img.css('margin', '0px')
+      img.css('margin', '0px');
+    } else{
+      img.css('opacity', '0.4')
+      alert("Practice mastered! Focus on your other practices, or add this practice again to keep at it.")
     }
   })
 
@@ -38,6 +41,7 @@ $('.plus').click(function() {
 $('.minus').click(function() {
   img = $(this).siblings().eq(0)
     if(img.css('width') == '300px'){
+      img.css('opacity', '1')
       img.css('width', '250px')
       img.css('margin', '25px');
     } else if(img.css('width') == '250px'){
@@ -51,5 +55,26 @@ $('.minus').click(function() {
       img.css('margin', '100px')
     }
   })
+
+  $('#plus-timer').click(function() {
+    img = $("#timer")
+      if(img.css('width') == '100px'){
+        img.css('width', '150px')
+        img.css('margin', '75px');
+      } else if(img.css('width') == '150px'){
+          img.css('width', '200px')
+          img.css('margin', '50px');
+      } else if(img.css('width') == '200px'){
+        img.css('width', '250px')
+        img.css('margin', '25px');
+      } else if(img.css('width') == '250px'){
+        img.css('width', '300px')
+        img.css('margin', '0px');
+      } else{
+        img.css('width', '100px')
+        img.css('margin', '100px')
+        alert("You've meditated five times! Keep practicing.")
+      }
+    })
 
 });
