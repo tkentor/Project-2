@@ -12,7 +12,6 @@ $(document).ready(function(){
 
     $("#start").click(function() {
       timeout = setTimeout(function() {
-        playSound('sound.wav')
         alert('Finished');
       }, delay)
     })

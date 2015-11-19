@@ -1,7 +1,11 @@
 class PracticesController < ApplicationController
 
   def index
-      @practices = Practice.all
+    if current_user
+    @practices = current_user.practices
+  else
+
+  end
   end
 
   def show
@@ -18,7 +22,7 @@ class PracticesController < ApplicationController
 
   def create
     @practice = Practice.new(params.require(:practice).permit(:title, :target, :image))
-
+    @practice.user_id = current_user.id
     @practice.save
     redirect_to practices_path
   end

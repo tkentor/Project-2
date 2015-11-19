@@ -12,6 +12,7 @@
     <button type="button" id="plus-timer">+</button>
     <button type="button" class="minus">–</button>
   </div>
+  <% if @practices %>
       <% @practices.each do |practice| %>
     <div class="bubbles">
       <%= image_tag "#{practice.image}" %>
@@ -20,6 +21,7 @@
     <button type="button" class="minus">–</button>
   </div>
 
+ <% end %>
  <% end %>
 
 </ul>
