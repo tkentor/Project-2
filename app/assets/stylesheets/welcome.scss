@@ -76,6 +76,7 @@ a {
 .reflections{
   color: blanchedalmond;
   background: rgba(205, 133, 63, .5);
+  margin: 0 10% 0 10%;
 }
 
 button{
@@ -94,5 +95,15 @@ button{
 
 .instructions{
   margin: 0 25% 0 25%;
+  padding: 20px 30px 20px 30px;
   text-align: justify;
+  background: rgba(0,0,0,.5);
+}
+
+.home-text{
+  font-size: 10px;
+  margin: 0 17% 0 17%;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  background: rgba(0,0,0,.5);
 }
