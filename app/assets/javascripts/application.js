@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
 $('.plus').click(function() {
-  img = $(this).siblings().eq(1)
+  img = $(this).siblings().eq(0)
     if(img.css('width') == '100px'){
       img.css('width', '150px')
       img.css('margin', '75px');
