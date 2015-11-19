@@ -2,14 +2,14 @@
 <h3><span class="top-button"><a href="/">&#60 b a c k </a></span></h3>
 <div class="form">
 
-<div class="instructions">Select a category and name your practice. A practice can be anything you enjoy or strive to do on a regular basis, like watching a classic film, going fishing, or even trying a new beer or restaurant. Set a target for the number of times you would like to practice each month.</div> 
+<div class="instructions">Select a category and name your practice. A practice can be anything you strive to do, like watching a classic film, going fishing, or trying a new restaurant. Set a target for the number of times you wish to practice this month.</div>
 
 <%= form_for @practice do |f| %>
 <%= value="category" %>
 <%= f.select :image, [['mindfulness', 'http://i.imgur.com/k4MwmCr.gif'],['languages','http://i.imgur.com/u2K1SPg.gif'],['books', 'http://i.imgur.com/s08ysrL.gif'],['travel', 'http://i.imgur.com/hGPFD48.gif'],['art','http://i.imgur.com/Qe7oGzP.gif'],['running', 'http://i.imgur.com/MFr3Ebp.gif'],['outdoors','http://i.imgur.com/W5foOMN.gif'],['call your mom','http://i.imgur.com/7OB8VWG.gif'],['sports','http://i.imgur.com/IrD0juY.gif'],['beer','http://i.imgur.com/5tT6s8P.gif'],['movies','http://i.imgur.com/mC0UJkC.gif']] %><br>
- <%= value="title" %>
+ <%= value="practice" %>
  <%= f.text_field :title %><br>
- <%= value="target" %>
+ <%= value="monthly target" %>
   <%= f.select :target, [['1'],['2'],['3'],['4'],['5']] %><br><br>
  <%= f.submit value="add practice" %>
 <% end %>
