@@ -89,8 +89,13 @@ button{
 }
 
 .button-delete{
-  background: red;
+  background: #B22222;
+  color: blanchedalmond;
   font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  text-shadow: 2px 2px black;
+  border: 1px solid rgb(178,34,34);
 }
 
 .instructions{
