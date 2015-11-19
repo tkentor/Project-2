@@ -4,8 +4,8 @@
 <div class="form">
 
 <%= form_for @practice do |f| %>
-<%= value="image" %>
-<%= f.select :image, [['yoga', 'http://i.imgur.com/k4MwmCr.gif'],['learn chinese','http://i.imgur.com/u2K1SPg.gif'],['read a book', 'http://i.imgur.com/s08ysrL.gif'],['travel', 'http://i.imgur.com/hGPFD48.gif'],['art','http://i.imgur.com/Qe7oGzP.gif'],['running', 'http://i.imgur.com/MFr3Ebp.gif'],['fishing','http://i.imgur.com/W5foOMN.gif'],['call your mom','http://i.imgur.com/7OB8VWG.gif'],['play basketball','http://i.imgur.com/IrD0juY.gif'],['try a new beer','http://i.imgur.com/5tT6s8P.gif'],['movies','http://i.imgur.com/mC0UJkC.gif']] %>
+<%= value="category" %>
+<%= f.select :image, [['mindfulness', 'http://i.imgur.com/k4MwmCr.gif'],['languages','http://i.imgur.com/u2K1SPg.gif'],['books', 'http://i.imgur.com/s08ysrL.gif'],['travel', 'http://i.imgur.com/hGPFD48.gif'],['art','http://i.imgur.com/Qe7oGzP.gif'],['running', 'http://i.imgur.com/MFr3Ebp.gif'],['outdoors','http://i.imgur.com/W5foOMN.gif'],['call your mom','http://i.imgur.com/7OB8VWG.gif'],['sports','http://i.imgur.com/IrD0juY.gif'],['beer','http://i.imgur.com/5tT6s8P.gif'],['movies','http://i.imgur.com/mC0UJkC.gif']] %>
  <%= value="title" %>
  <%= f.text_field :title %>
  <%= value="target" %>
