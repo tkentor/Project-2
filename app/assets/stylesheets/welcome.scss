@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html{
+  margin-bottom: 60px;
+}
 
 body{
   background: url("http://cdn.lightgalleries.net/4bd5ec0f44d0a/images/burma-2012-105-1.jpg")  no-repeat center center fixed;
@@ -115,6 +118,10 @@ button{
 
 .field{
   text-transform: lowercase;
+}
+
+ul{
+    list-style-type: none;
 }
 
 h2{
