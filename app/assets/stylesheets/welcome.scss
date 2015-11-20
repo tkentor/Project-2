@@ -37,7 +37,7 @@ h1 {
   margin: 100px;
 }
 
-h2 {
+.labels {
   font-size: 10px;
   color: white;
   position: absolute;
@@ -49,7 +49,7 @@ h2 {
   padding: 10px;
 }
 
-h2 span {
+.labels span {
    padding:0 7px;
 }
 
@@ -115,4 +115,10 @@ button{
 
 .field{
   text-transform: lowercase;
+}
+
+h2{
+  color: #B22222;
+  background: rgba(255,250,250,.5);
+  margin: 0 25% 0 25%;
 }

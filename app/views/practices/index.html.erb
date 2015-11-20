@@ -6,9 +6,9 @@
 
   <div class="bubbles">
     <img src="http://i.imgur.com/QKHTdmS.gif" id="timer">
-    <h2>
+    <div class="labels">
       <span><a href='/mindfulness'>meditation timer</a></span>
-    </h2>
+    </div>
     <button type="button" id="plus-timer">+</button>
     <button type="button" class="minus">–</button>
   </div>
@@ -16,7 +16,7 @@
       <% @practices.each do |practice| %>
     <div class="bubbles">
       <%= image_tag "#{practice.image}" %>
-      <h2><span><%= link_to "#{practice.title}", practice_path(practice) %></span></h2>
+      <div class="labels"><span><%= link_to "#{practice.title}", practice_path(practice) %></span></div>
     <button type="button" class="plus">+</button>
     <button type="button" class="minus">–</button>
   </div>
