@@ -23,8 +23,8 @@ $('.plus').click(function() {
       img.css('width', '150px')
       img.css('margin', '75px');
     } else if(img.css('width') == '150px'){
-        img.css('width', '200px')
-        img.css('margin', '50px');
+      img.css('width', '200px')
+      img.css('margin', '50px');
     } else if(img.css('width') == '200px'){
       img.css('width', '250px')
       img.css('margin', '25px');
@@ -40,13 +40,16 @@ $('.plus').click(function() {
 
 $('.minus').click(function() {
   img = $(this).siblings().eq(0)
-    if(img.css('width') == '300px'){
+    if(img.css('opacity') == '0.4'){
       img.css('opacity', '1')
+      img.css('width', '300px')
+      img.css('margin', '0px');
+    } else if(img.css('width') == '300px' && img.css('opacity') == '1'){
       img.css('width', '250px')
       img.css('margin', '25px');
     } else if(img.css('width') == '250px'){
-        img.css('width', '200px')
-        img.css('margin', '50px');
+      img.css('width', '200px')
+      img.css('margin', '50px');
     } else if(img.css('width') == '200px'){
       img.css('width', '150px')
       img.css('margin', '75px');

@@ -4,7 +4,7 @@ class PracticesController < ApplicationController
     if current_user
     @practices = current_user.practices
   else
-
+    redirect_to new_user_session_path
   end
   end
 
