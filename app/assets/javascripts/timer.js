@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   console.log("working")
 
@@ -15,6 +17,7 @@ $(document).ready(function(){
         alert('Finished');
       }, delay)
     })
+
 
 
         // $("#stop").click(function() {
