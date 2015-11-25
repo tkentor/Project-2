@@ -2,11 +2,12 @@ class PracticesController < ApplicationController
 
   def index
     if current_user
-    @practices = current_user.practices
-  else
-    redirect_to new_user_session_path
+      @practices = current_user.practices
+    else
+      redirect_to new_user_session_path
+    end
   end
-  end
+  # Good use of current_user
 
   def show
     @practice = Practice.find(params[:id])
@@ -36,6 +37,7 @@ class PracticesController < ApplicationController
       render 'edit'
     end
   end
+  # Nice
 
    def destroy
     @practice = Practice.find(params[:id])

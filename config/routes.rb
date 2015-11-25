@@ -4,11 +4,13 @@ Rails.application.routes.draw do
   root to: 'practices#index'
 
   get '/about', to: 'welcome#about'
-    get '/mindfulness', to: 'welcome#mindfulness'
+  get '/mindfulness', to: 'welcome#mindfulness'
 
   resources :practices do
     resources :reflections
   end
+
+  # Looks good
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
