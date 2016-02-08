@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'practices#index'
 
+  get '/index', to: 'welcome#index'
   get '/about', to: 'welcome#about'
   get '/mindfulness', to: 'welcome#mindfulness'
   get '/guest', to: 'welcome#guest'

@@ -109,7 +109,7 @@ button{
 }
 
 .home-text{
-  font-size: 10px;
+  font-size: 1rem;
   margin: 0 17% 0 17%;
   padding: 10px 20px 10px 20px;
   text-align: center;
@@ -132,4 +132,8 @@ h2{
 
 .timer{
   margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,27 +1,110 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<div class="home-text">Add a new practice below, or click on an existing practice to update it. Use the + to make note after every time you practice. Complete a practice five times to master it.</div><br>
-<h3>
-  <span class="top-button"><a href="/practices/new">add practice&#8314</a></span>
-</h3><br>
+<div class="home-text">Guest mode has sample practices listed for you. Use the	&#10798 button below each time you practice. Complete a practice five times to master it. Sign up to customize your practices and add reflections. </div><br>
 
-  <div class="bubbles">
-    <img src="http://i.imgur.com/QKHTdmS.gif" id="timer">
-    <div class="labels">
-      <span><a href='/mindfulness'>meditation timer</a></span>
-    </div>
-    <button type="button" id="plus-timer">+</button>
-    <button type="button" class="minus">–</button>
-  </div>
-  <% if @practices %>
-      <% @practices.each do |practice| %>
-    <div class="bubbles">
-      <%= image_tag "#{practice.image}" %>
-      <div class="labels"><span><%= link_to "#{practice.title}", practice_path(practice) %></span></div>
-    <button type="button" class="plus">+</button>
-    <button type="button" class="minus">–</button>
-  </div>
 
- <% end %>
- <% end %>
+
+
+
+
+
+
+<div class="bubbles">
+  <img src="http://i.imgur.com/QKHTdmS.gif">
+  <div class="labels">
+    <span><a href='/mindfulness'>meditation timer</a></span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/k4MwmCr.gif">
+  <div class="labels">
+    <span>do yoga</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/u2K1SPg.gif">
+  <div class="labels">
+    <span>learn chinese</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/mC0UJkC.gif">
+  <div class="labels">
+    <span>watch a class film</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/W5foOMN.gif">
+  <div class="labels">
+    <span>go fishing</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/Qe7oGzP.gif">
+  <div class="labels">
+    <span>paint a picture</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/s08ysrL.gif">
+  <div class="labels">
+    <span>read a book</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/hGPFD48.gif">
+  <div class="labels">
+    <span>travel</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/MFr3Ebp.gif">
+  <div class="labels">
+    <span>go for a run</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/7OB8VWG.gif">
+  <div class="labels">
+    <span>call an old friend</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/IrD0juY.gif">
+  <div class="labels">
+    <span>play basketball</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+<div class="bubbles">
+  <img src="http://i.imgur.com/5tT6s8P.gif">
+  <div class="labels">
+    <span>try a new beer</span>
+  </div>
+  <button type="button" class="plus">+</button>
+</div>
+
+
+
+
+<% if @practices %>
+<% @practices.each do |practice| %>
+<div class="bubbles">
+  <%= image_tag "#{practice.image}" %>
+  <div class="labels"><span><%= link_to "#{practice.title}", practice_path(practice) %></span></div>
+  <button type="button" class="plus">+</button>
+</div>
+
+<% end %>
+<% end %>
 
 </ul>
