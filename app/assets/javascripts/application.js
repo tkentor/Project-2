@@ -33,7 +33,7 @@ $('.plus').click(function() {
       img.css('margin', '0px');
     } else{
       img.css('opacity', '0.4')
-      alert("Practice mastered! Focus on your other practices, or add this practice again to keep at it.")
+      alert("Practice mastered! Time to focus on your other practices.")
     }
   })
 

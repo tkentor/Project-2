@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root to: 'practices#index'
+
+  authenticated :user do
+    root 'practices#index', as: :authenticated_root
+  end
+
+
+  root to: 'welcome#guest'
 
   get '/index', to: 'welcome#index'
   get '/about', to: 'welcome#about'
