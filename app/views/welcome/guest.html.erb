@@ -1,0 +1,27 @@
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<div class="home-text">Add a new practice below, or click on an existing practice to update it. Use the + to make note after every time you practice. Complete a practice five times to master it.</div><br>
+<h3>
+  <span class="top-button"><a href="/practices/new">add practice&#8314</a></span>
+</h3><br>
+
+  <div class="bubbles">
+    <img src="http://i.imgur.com/QKHTdmS.gif" id="timer">
+    <div class="labels">
+      <span><a href='/mindfulness'>meditation timer</a></span>
+    </div>
+    <button type="button" id="plus-timer">+</button>
+    <button type="button" class="minus">–</button>
+  </div>
+  <% if @practices %>
+      <% @practices.each do |practice| %>
+    <div class="bubbles">
+      <%= image_tag "#{practice.image}" %>
+      <div class="labels"><span><%= link_to "#{practice.title}", practice_path(practice) %></span></div>
+    <button type="button" class="plus">+</button>
+    <button type="button" class="minus">–</button>
+  </div>
+
+ <% end %>
+ <% end %>
+
+</ul>
